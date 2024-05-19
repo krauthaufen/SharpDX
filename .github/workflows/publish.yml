@@ -27,7 +27,7 @@ jobs:
           sdk-version: 17763
       - name: Build
         shell: cmd
-        run: build.cmd
+        run: build.cmd 
       # - name: Upload Packages
       #   uses: actions/upload-artifact@v3
       #   with:
