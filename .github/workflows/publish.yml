@@ -13,6 +13,10 @@ jobs:
     steps:  
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Install Dotnet
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '6.0.x'
       - name: Build
         shell: cmd
         run: build.cmd
